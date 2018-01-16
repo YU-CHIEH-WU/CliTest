@@ -13,11 +13,11 @@ import { Http } from '@angular/http';
 export class AppComponent {
   title = 'app';
   item: any;
-  apiUrl: String = 'http://localhost:5000/api/values';
+  apiUrl: string = String('http://localhost:5000/api/values');
   constructor(private http: Http) {
   }
   doGet() {
-    const url: String = this.apiUrl;
+    const url = this.apiUrl;
     this.http.get(url).subscribe(res => console.table(res.json()));
   }
 }
