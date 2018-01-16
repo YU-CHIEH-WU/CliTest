@@ -1,18 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { xoCompareComponent } from './xoCompare.component';
+import { squaredMirrorComponent } from './squaredMirror.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, xoCompareComponent, squaredMirrorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [HttpModule],
+  bootstrap: [AppComponent, xoCompareComponent, squaredMirrorComponent]
 })
 export class AppModule { }
