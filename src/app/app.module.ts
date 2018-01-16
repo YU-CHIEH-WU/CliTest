@@ -3,19 +3,19 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { xoCompareComponent } from './xoCompare.component';
-import { squaredMirrorComponent } from './squaredMirror.component';
+import { XoCompareComponent } from './xoCompare.component';
+import { SquaredMirrorComponent } from './squaredMirror.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, xoCompareComponent, squaredMirrorComponent
+    AppComponent, XoCompareComponent, SquaredMirrorComponent
   ],
   imports: [
     BrowserModule,
     HttpModule
   ],
   providers: [HttpModule],
-  bootstrap: [AppComponent, xoCompareComponent, squaredMirrorComponent]
+  bootstrap: [AppComponent, XoCompareComponent, SquaredMirrorComponent]
 })
 export class AppModule { }

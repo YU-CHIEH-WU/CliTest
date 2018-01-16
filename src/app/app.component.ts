@@ -10,15 +10,14 @@ import { Http } from '@angular/http';
   // 模板所用的css
   styleUrls: ['./app.component.css']
 })
-//   
 export class AppComponent {
   title = 'app';
   item: any;
-  apiUrl: string = "http://localhost:5000/api/values";
+  apiUrl: String = 'http://localhost:5000/api/values';
   constructor(private http: Http) {
   }
   doGet() {
-    let url = this.apiUrl;
+    const url: String = this.apiUrl;
     this.http.get(url).subscribe(res => console.table(res.json()));
   }
 }
