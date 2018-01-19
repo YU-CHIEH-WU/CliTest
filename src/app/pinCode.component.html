@@ -1,0 +1,10 @@
+<div class="col s12 z-depth-2">
+    <p>https://www.codewars.com/kata/55f8a9c06c018a0d6e000132/train/typescript</p>
+    <div class="input-field col s6">
+        <input [(ngModel)]="pin" id="pin" type="text" class="validate">
+        <label for="pin">PIN Code</label>
+    </div>
+    <button (click)="doTest()" class="waves-effect waves-light btn-flat">TEST</button>
+    <p [innerHtml]="result"></p>
+    <br />
+</div>

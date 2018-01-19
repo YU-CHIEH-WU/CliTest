@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background: #f1f1f1;
+}
+
+.z-depth-1,
+.z-depth-2,
+.z-depth-3,
+.z-depth-4 {
+    background: white;
+}
+
+.text-yellow {
+    color: #fbc02d;
+}
+
+.text-red {
+    color: #e53935;
+}
+
+.text-teal {
+    color: #009688;
+}
